@@ -4,6 +4,12 @@
     }
 }
 
+@mixin tamañoMedio {
+    @media(min-width: $tamañoMedio) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (min-width: $tablet) {
         @content;

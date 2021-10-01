@@ -1,5 +1,6 @@
 const { series, src, dest, watch } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const concat = require('gulp-concat');
 
 // function hola(done) {
 //     console.log('Hola mundo');
@@ -12,6 +13,11 @@ const sass = require('gulp-sass')(require('sass'));
 // }
 
 // exports.default = parallel(hola, compilarCSS);
+
+const paths = {
+    scss:'src/scss/**/*.scss',
+    js: 'src/js/**/*.js'
+}
 
 // FUNCION QUE COMPILA SASS
 
@@ -29,10 +35,19 @@ function minificarCss() {
         .pipe(dest('./build/css'))
 }
 
+function javaScript() {
+    return src(paths.js)
+    .pipe(concat('bundle.js'))
+    .pipe(dest('./build/js'))
+}
+
 function watchArchivos() {
-    watch('src/scss/**/*.scss', css); // * La carpeta actual ------ ** Todos los archivos con esa extension
+    watch(paths.scss, css); // * La carpeta actual ------ ** Todos los archivos con esa extension
+    watch(paths.js, javaScript);
 }
 
 exports.css = css;
 exports.minificarCss = minificarCss;
 exports.watchArchivos = watchArchivos;
+
+exports.default = series(css, javaScript, watchArchivos);
