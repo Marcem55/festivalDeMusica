@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="build/css/app.css">
-    <title>Rock & EDM Festival</title>
+    <title>Festival de Rock & Reggaeton</title>
 </head>
 <body>
     <header class="header">
         <div class="contenedor contenido-header">
-            <h1>Rock & EDM Festival</h1>
+            <h1>Festival de Rock & Reggaeton</h1>
             <nav class="navegacion-principal">
                 <a href="#">Line up</a>
                 <a href="#">Galeria</a>
@@ -18,6 +18,91 @@
             </nav>
         </div>
     </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Festival de Rock & Reggaeton
+                    <span>Julio 2022, Buenos Aires, Argentina</span>
+                </h2>
+            </div>
+        </div>
+        <video src="video/concierto.mp4" autoplay muted loop>
+            <!-- diferentes sources porque depende del soporte que tenga el navegador del usuario -->
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type='video/ogg'>
+            <source src="video/concierto.webm" type="video/webm"> 
+        </video>
+    </div>
+
+    <div class="sobre-festival contenedor">
+        <div class="imagen">
+            <img src="src/img/imagen_vocalista.jpg" alt="imagen vocalista">
+        </div>
+        <div class="contenido-festival">
+            <h2>Festival de Rock & Reggaeton</h2>
+            <p class="fecha">Julio 2022, Buenos Aires, Argentina</p>
+            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident mollitia consequuntur totam nihil. Adipisci corrupti, fugit rerum, alias labore expedita unde odio voluptates dolores vel quod libero mollitia. Voluptas, cupiditate.</p>
+        </div>
+    </div>
+
+    <section class="lineup">
+        <h3>Line Up</h3>
+        <p class="dia">Viernes 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Soda Stereo</span></li>
+                    <li>22:00 | <span>Bersuit Vergarabat</span></li>
+                    <li>20:00 | <span>Viejas Locas</span></li>
+                    <li>19:00 | <span>La Beriso</span></li>
+                    <li>18:00 | <span>Intoxicados</span></li>
+                    <li>17:00 | <span>Koino Yokan</span></li>
+                </ul>
+
+            </div>
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario Reggaeton</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Nicky Jam</span></li>
+                    <li>22:00 | <span>Daddy Yankee</span></li>
+                    <li>20:00 | <span>Don Omar</span></li>
+                    <li>19:00 | <span>Maluma</span></li>
+                    <li>18:00 | <span>Maria Becerra</span></li>
+                    <li>17:00 | <span>La Cobra</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="dia">Sabado 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Callejeros</span></li>
+                    <li>22:00 | <span>La Vela Puerca</span></li>
+                    <li>20:00 | <span>Las Pastillas del Abuelo</span></li>
+                    <li>19:00 | <span>Rata Blanca</span></li>
+                    <li>18:00 | <span>La Renga</span></li>
+                    <li>17:00 | <span>Virus</span></li>
+                </ul>
+
+            </div>
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario Reggaeton</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Nicki Nicole</span></li>
+                    <li>22:00 | <span>Duki</span></li>
+                    <li>20:00 | <span>Paulo Londra</span></li>
+                    <li>19:00 | <span>La Champions Liga</span></li>
+                    <li>18:00 | <span>LGANTE</span></li>
+                    <li>17:00 | <span>Mau y Ricky</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     
 </body>
 </html>
