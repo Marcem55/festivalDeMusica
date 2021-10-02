@@ -12,9 +12,9 @@
         <div class="contenedor contenido-header">
             <h1>Festival de Rock & Reggaeton</h1>
             <nav class="navegacion-principal">
-                <a href="#">Line up</a>
-                <a href="#">Galeria</a>
-                <a href="#">Boletos</a>
+                <a href="#lineup">Line up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#pases">Pases</a>
             </nav>
         </div>
     </header>
@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <section class="lineup">
+    <section id="lineup" class="lineup">
         <h3>Line Up</h3>
         <p class="dia">Viernes 21</p>
         <div class="escenarios-contenedor contenedor">
@@ -75,7 +75,7 @@
             </div>
         </div>
 
-        <p class="dia">Sabado 22</p>
+        <p class="dia">Sábado 22</p>
         <div class="escenarios-contenedor contenedor">
             <div class="escenario rock bg-verde">
                 <p class="nombre-escenario">Escenario Rock</p>
@@ -103,10 +103,92 @@
         </div>
     </section>
 
-    <section class="galeria contenedor">
-        <h3>Galeria</h3>
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
         <ul class="galeria-imagenes"></ul>
     </section>
+
+    <section id="pases" class="boletos bg-verde">
+        <h3>Pases</h3>
+        <div class="contenedor-boletos contenedor">
+            <div class="basico plan">
+                <p>1 día</p>
+                <table class="pase">
+                    <thead>
+                        <tr>
+                            <th>
+                                Incluye
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Acceso a todos los escenarios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Comida y bebida
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                $100
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="premium plan">
+                <p>2 días</p>
+                <table class="pase">
+                    <thead>
+                        <tr>
+                            <th>
+                                Incluye
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Acceso a todos los escenarios
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Comida y bebida
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Remera del evento
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Acceso VIP
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                $180
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Festival de Rock y Reggaeton. Todos los derechos reservados.</p>
+    </footer>
     <script src="./build/js/bundle.js"></script>
 </body>
 </html>

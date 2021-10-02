@@ -20,6 +20,11 @@
             margin-bottom: 0;
         }
     }
+    &.fijo {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .8rem #444;
+    }
 }
 
 .navegacion-principal {
